@@ -8,6 +8,10 @@
 * IDE
 * Python 3.x
 
+### Deployed App
+
+App is deployed on Streamlit Cloud and accessed via [link](https://piyush-an-damg7245-spring23-streamlitmain-drkgeo.streamlit.app/)
+
 ---
 
 ### Tutorial
