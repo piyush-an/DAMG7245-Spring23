@@ -133,3 +133,4 @@ dmypy.json
 streamlit/venv_streamlit
 aws/venv_aws
 sqlite/venv_sqlite
+sqlite/example.db
