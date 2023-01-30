@@ -31,7 +31,7 @@
 4. Command: `apply`
 
     The `terraform apply` command executes the actions proposed in a Terraform plan.
-    ```bash`
+    ```bash
     terraform apply
     ```
 
