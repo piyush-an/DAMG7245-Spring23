@@ -132,3 +132,4 @@ dmypy.json
 # User defined
 streamlit/venv_streamlit
 aws/venv_aws
+sqlite/venv_sqlite
