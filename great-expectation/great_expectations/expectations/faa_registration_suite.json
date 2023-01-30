@@ -1,0 +1,2063 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "faa_registration_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "SERIAL NUMBER",
+          "TYPE REGISTRANT",
+          "N-NUMBER",
+          "MODE S CODE",
+          "OTHER NAMES(2)",
+          "CERTIFICATION",
+          "OTHER NAMES(5)",
+          "YEAR MFR",
+          "KIT MODEL",
+          "COUNTRY",
+          "EXPIRATION DATE",
+          "STATE",
+          "ZIP CODE",
+          "AIR WORTH DATE",
+          "TYPE ENGINE",
+          "FRACT OWNER",
+          "REGION",
+          "OTHER NAMES(3)",
+          "NAME",
+          "STATUS CODE",
+          "KIT MFR",
+          "OTHER NAMES(4)",
+          "COUNTY",
+          "STREET2",
+          "CERT ISSUE DATE",
+          "CITY",
+          "UNIQUE ID",
+          "MODE S CODE HEX",
+          "X35",
+          "LAST ACTION DATE",
+          "ENG MFR MDL",
+          "MFR MDL CODE",
+          "TYPE AIRCRAFT",
+          "STREET",
+          "OTHER NAMES(1)"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "success_ratio": 1.0
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "UNIQUE ID"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "UNIQUE ID"
+            },
+            "metric_dependencies": null,
+            "metric_name": "column_values.unique.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "LAST ACTION DATE"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "LAST ACTION DATE"
+            },
+            "metric_dependencies": null,
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "UNIQUE ID"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "UNIQUE ID"
+            },
+            "metric_dependencies": null,
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "YEAR MFR",
+        "max_value": 2017,
+        "min_value": 2017,
+        "mostly": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "column_max_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "YEAR MFR"
+              },
+              "metric_dependencies": null,
+              "metric_name": "column.max",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          },
+          "column_min_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "YEAR MFR"
+              },
+              "metric_dependencies": null,
+              "metric_name": "column.min",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "LAST ACTION DATE",
+        "max_value": 20170724,
+        "min_value": 19720113,
+        "mostly": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "column_max_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "LAST ACTION DATE"
+              },
+              "metric_dependencies": null,
+              "metric_name": "column.max",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          },
+          "column_min_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "LAST ACTION DATE"
+              },
+              "metric_dependencies": null,
+              "metric_name": "column.min",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "CERT ISSUE DATE",
+        "max_value": 20170724,
+        "min_value": 19401226,
+        "mostly": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "column_max_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "CERT ISSUE DATE"
+              },
+              "metric_dependencies": null,
+              "metric_name": "column.max",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          },
+          "column_min_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "CERT ISSUE DATE"
+              },
+              "metric_dependencies": null,
+              "metric_name": "column.min",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "EXPIRATION DATE",
+        "max_value": 20201231,
+        "min_value": 19710618,
+        "mostly": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "column_max_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "EXPIRATION DATE"
+              },
+              "metric_dependencies": null,
+              "metric_name": "column.max",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          },
+          "column_min_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "EXPIRATION DATE"
+              },
+              "metric_dependencies": null,
+              "metric_name": "column.min",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      }
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "citation_date": "2022-06-11T06:53:43.475435Z",
+        "comment": "Suite created by Rule-Based Profiler with the configuration included.",
+        "profiler_config": {
+          "config_version": 1.0,
+          "name": "onboarding_data_assistant",
+          "rules": {
+            "categorical_columns_rule": {
+              "domain_builder": {
+                "allowed_semantic_types_passthrough": [
+                  "logic"
+                ],
+                "cardinality_limit_mode": "rel_100",
+                "class_name": "CategoricalColumnDomainBuilder",
+                "exclude_column_name_suffixes": [
+                  "_id"
+                ],
+                "exclude_column_names": [
+                  "SERIAL NUMBER",
+                  "TYPE REGISTRANT",
+                  "N-NUMBER",
+                  "MODE S CODE",
+                  "OTHER NAMES(2)",
+                  "CERTIFICATION",
+                  "OTHER NAMES(5)",
+                  "KIT MODEL",
+                  "COUNTRY",
+                  "STATE",
+                  "ZIP CODE",
+                  "AIR WORTH DATE",
+                  "TYPE ENGINE",
+                  "id",
+                  "FRACT OWNER",
+                  "REGION",
+                  "OTHER NAMES(3)",
+                  "NAME",
+                  "STATUS CODE",
+                  "KIT MFR",
+                  "OTHER NAMES(4)",
+                  "COUNTY",
+                  "STREET2",
+                  "MODE S CODE HEX",
+                  "CITY",
+                  "X35",
+                  "ENG MFR MDL",
+                  "MFR MDL CODE",
+                  "TYPE AIRCRAFT",
+                  "STREET",
+                  "OTHER NAMES(1)"
+                ],
+                "exclude_semantic_types": [
+                  "binary",
+                  "currency",
+                  "identifier"
+                ],
+                "include_column_name_suffixes": null,
+                "include_column_names": null,
+                "include_semantic_types": null,
+                "max_proportion_unique": null,
+                "max_unique_values": null,
+                "module_name": "great_expectations.rule_based_profiler.domain_builder.categorical_column_domain_builder",
+                "semantic_type_filter_class_name": null,
+                "semantic_type_filter_module_name": null
+              },
+              "expectation_configuration_builders": [
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_values_to_be_in_set",
+                  "meta": {
+                    "profiler_details": "$parameter.value_set_estimator.details"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "mostly": "$variables.mostly",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "class_name": "ValueSetMultiBatchParameterBuilder",
+                      "evaluation_parameter_builder_configs": null,
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.value_set_multi_batch_parameter_builder",
+                      "name": "value_set_estimator"
+                    }
+                  ],
+                  "value_set": "$parameter.value_set_estimator.value"
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_unique_value_count_to_be_between",
+                  "max_value": "$parameter.column_distinct_values_count_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.column_distinct_values_count_range.details"
+                  },
+                  "min_value": "$parameter.column_distinct_values_count_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.distinct_values.count",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_distinct_values_count_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+                  "max_value": "$parameter.column_unique_proportion_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.column_unique_proportion_range.details"
+                  },
+                  "min_value": "$parameter.column_unique_proportion_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.unique_proportion",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_unique_proportion_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                }
+              ],
+              "parameter_builders": [
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.distinct_values.count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_distinct_values_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": false,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.value_counts",
+                  "metric_value_kwargs": {
+                    "sort": "value"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_value_counts",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": false
+                }
+              ],
+              "variables": {
+                "estimator": "bootstrap",
+                "false_positive_rate": 0.05,
+                "include_estimator_samples_histogram_in_details": false,
+                "mostly": 1.0,
+                "n_resamples": 9999,
+                "quantile_statistic_interpolation_method": "auto",
+                "random_seed": null,
+                "round_decimals": 4,
+                "strict_max": false,
+                "strict_min": false,
+                "truncate_values": {
+                  "lower_bound": 0.0,
+                  "upper_bound": null
+                }
+              }
+            },
+            "column_value_nonnullity_rule": {
+              "domain_builder": {
+                "class_name": "MapMetricColumnDomainBuilder",
+                "exclude_column_name_suffixes": null,
+                "exclude_column_names": [
+                  "N-NUMBER",
+                  "SERIAL NUMBER",
+                  "MFR MDL CODE",
+                  "ENG MFR MDL",
+                  "TYPE REGISTRANT",
+                  "NAME",
+                  "STREET",
+                  "STREET2",
+                  "CITY",
+                  "STATE",
+                  "ZIP CODE",
+                  "REGION",
+                  "COUNTY",
+                  "COUNTRY",
+                  "CERTIFICATION",
+                  "TYPE AIRCRAFT",
+                  "TYPE ENGINE",
+                  "STATUS CODE",
+                  "MODE S CODE",
+                  "FRACT OWNER",
+                  "AIR WORTH DATE",
+                  "OTHER NAMES(1)",
+                  "OTHER NAMES(2)",
+                  "OTHER NAMES(3)",
+                  "OTHER NAMES(4)",
+                  "OTHER NAMES(5)",
+                  "KIT MFR",
+                  "KIT MODEL",
+                  "MODE S CODE HEX",
+                  "X35"
+                ],
+                "exclude_semantic_types": null,
+                "include_column_name_suffixes": null,
+                "include_column_names": null,
+                "include_semantic_types": null,
+                "map_metric_name": "column_values.nonnull",
+                "max_unexpected_ratio": null,
+                "max_unexpected_values": 0,
+                "min_max_unexpected_values_proportion": 0.975,
+                "module_name": "great_expectations.rule_based_profiler.domain_builder.map_metric_column_domain_builder",
+                "semantic_type_filter_class_name": null,
+                "semantic_type_filter_module_name": null
+              },
+              "expectation_configuration_builders": [
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": "$parameter.column_values.nonnull.unexpected_value.value <= 1.0 - $variables.success_ratio",
+                  "expectation_type": "expect_column_values_to_not_be_null",
+                  "meta": {
+                    "profiler_details": "$parameter.column_values.nonnull.unexpected_value.details"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "class_name": "MeanUnexpectedMapMetricMultiBatchParameterBuilder",
+                      "evaluation_parameter_builder_configs": [
+                        {
+                          "class_name": "MetricMultiBatchParameterBuilder",
+                          "enforce_numeric_metric": true,
+                          "evaluation_parameter_builder_configs": null,
+                          "json_serialize": false,
+                          "metric_domain_kwargs": null,
+                          "metric_name": "table.row_count",
+                          "metric_value_kwargs": null,
+                          "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                          "name": "table_row_count",
+                          "reduce_scalar_metric": true,
+                          "replace_nan_with_zero": true
+                        },
+                        {
+                          "class_name": "MetricMultiBatchParameterBuilder",
+                          "enforce_numeric_metric": true,
+                          "evaluation_parameter_builder_configs": null,
+                          "json_serialize": false,
+                          "metric_domain_kwargs": "$domain.domain_kwargs",
+                          "metric_name": "column_values.nonnull.unexpected_count",
+                          "metric_value_kwargs": null,
+                          "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                          "name": "column_values_nonnull_unexpected_count",
+                          "reduce_scalar_metric": true,
+                          "replace_nan_with_zero": true
+                        }
+                      ],
+                      "json_serialize": true,
+                      "map_metric_name": "column_values.nonnull",
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.mean_unexpected_map_metric_multi_batch_parameter_builder",
+                      "name": "column_values.nonnull.unexpected_value",
+                      "null_count_parameter_builder_name": "column_values_nonnull_unexpected_count",
+                      "total_count_parameter_builder_name": "table_row_count"
+                    }
+                  ]
+                }
+              ],
+              "parameter_builders": [
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.unique.unexpected_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_unique_unexpected_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.nonnull.unexpected_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_nonnull_unexpected_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.null.unexpected_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_null_unexpected_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                }
+              ],
+              "variables": {
+                "success_ratio": 0.75
+              }
+            },
+            "column_value_nullity_rule": {
+              "domain_builder": {
+                "class_name": "MapMetricColumnDomainBuilder",
+                "exclude_column_name_suffixes": null,
+                "exclude_column_names": [
+                  "N-NUMBER",
+                  "SERIAL NUMBER",
+                  "MFR MDL CODE",
+                  "ENG MFR MDL",
+                  "TYPE REGISTRANT",
+                  "NAME",
+                  "STREET",
+                  "STREET2",
+                  "CITY",
+                  "STATE",
+                  "ZIP CODE",
+                  "REGION",
+                  "COUNTY",
+                  "COUNTRY",
+                  "CERTIFICATION",
+                  "TYPE AIRCRAFT",
+                  "TYPE ENGINE",
+                  "STATUS CODE",
+                  "MODE S CODE",
+                  "FRACT OWNER",
+                  "AIR WORTH DATE",
+                  "OTHER NAMES(1)",
+                  "OTHER NAMES(2)",
+                  "OTHER NAMES(3)",
+                  "OTHER NAMES(4)",
+                  "OTHER NAMES(5)",
+                  "KIT MFR",
+                  "KIT MODEL",
+                  "MODE S CODE HEX",
+                  "X35"
+                ],
+                "exclude_semantic_types": null,
+                "include_column_name_suffixes": null,
+                "include_column_names": null,
+                "include_semantic_types": null,
+                "map_metric_name": "column_values.null",
+                "max_unexpected_ratio": null,
+                "max_unexpected_values": 0,
+                "min_max_unexpected_values_proportion": 0.975,
+                "module_name": "great_expectations.rule_based_profiler.domain_builder.map_metric_column_domain_builder",
+                "semantic_type_filter_class_name": null,
+                "semantic_type_filter_module_name": null
+              },
+              "expectation_configuration_builders": [
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": "$parameter.column_values.null.unexpected_value.value <= 1.0 - $variables.success_ratio",
+                  "expectation_type": "expect_column_values_to_be_null",
+                  "meta": {
+                    "profiler_details": "$parameter.column_values.null.unexpected_value.details"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "class_name": "MeanUnexpectedMapMetricMultiBatchParameterBuilder",
+                      "evaluation_parameter_builder_configs": [
+                        {
+                          "class_name": "MetricMultiBatchParameterBuilder",
+                          "enforce_numeric_metric": true,
+                          "evaluation_parameter_builder_configs": null,
+                          "json_serialize": false,
+                          "metric_domain_kwargs": null,
+                          "metric_name": "table.row_count",
+                          "metric_value_kwargs": null,
+                          "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                          "name": "table_row_count",
+                          "reduce_scalar_metric": true,
+                          "replace_nan_with_zero": true
+                        },
+                        {
+                          "class_name": "MetricMultiBatchParameterBuilder",
+                          "enforce_numeric_metric": true,
+                          "evaluation_parameter_builder_configs": null,
+                          "json_serialize": false,
+                          "metric_domain_kwargs": "$domain.domain_kwargs",
+                          "metric_name": "column_values.nonnull.unexpected_count",
+                          "metric_value_kwargs": null,
+                          "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                          "name": "column_values_nonnull_unexpected_count",
+                          "reduce_scalar_metric": true,
+                          "replace_nan_with_zero": true
+                        }
+                      ],
+                      "json_serialize": true,
+                      "map_metric_name": "column_values.null",
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.mean_unexpected_map_metric_multi_batch_parameter_builder",
+                      "name": "column_values.null.unexpected_value",
+                      "null_count_parameter_builder_name": "column_values_nonnull_unexpected_count",
+                      "total_count_parameter_builder_name": "table_row_count"
+                    }
+                  ]
+                }
+              ],
+              "parameter_builders": [
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.unique.unexpected_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_unique_unexpected_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.nonnull.unexpected_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_nonnull_unexpected_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.null.unexpected_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_null_unexpected_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                }
+              ],
+              "variables": {
+                "success_ratio": 0.75
+              }
+            },
+            "column_value_uniqueness_rule": {
+              "domain_builder": {
+                "class_name": "MapMetricColumnDomainBuilder",
+                "exclude_column_name_suffixes": null,
+                "exclude_column_names": [
+                  "N-NUMBER",
+                  "SERIAL NUMBER",
+                  "MFR MDL CODE",
+                  "ENG MFR MDL",
+                  "TYPE REGISTRANT",
+                  "NAME",
+                  "STREET",
+                  "STREET2",
+                  "CITY",
+                  "STATE",
+                  "ZIP CODE",
+                  "REGION",
+                  "COUNTY",
+                  "COUNTRY",
+                  "CERTIFICATION",
+                  "TYPE AIRCRAFT",
+                  "TYPE ENGINE",
+                  "STATUS CODE",
+                  "MODE S CODE",
+                  "FRACT OWNER",
+                  "AIR WORTH DATE",
+                  "OTHER NAMES(1)",
+                  "OTHER NAMES(2)",
+                  "OTHER NAMES(3)",
+                  "OTHER NAMES(4)",
+                  "OTHER NAMES(5)",
+                  "KIT MFR",
+                  "KIT MODEL",
+                  "MODE S CODE HEX",
+                  "X35"
+                ],
+                "exclude_semantic_types": null,
+                "include_column_name_suffixes": null,
+                "include_column_names": null,
+                "include_semantic_types": null,
+                "map_metric_name": "column_values.unique",
+                "max_unexpected_ratio": null,
+                "max_unexpected_values": 0,
+                "min_max_unexpected_values_proportion": 0.975,
+                "module_name": "great_expectations.rule_based_profiler.domain_builder.map_metric_column_domain_builder",
+                "semantic_type_filter_class_name": null,
+                "semantic_type_filter_module_name": null
+              },
+              "expectation_configuration_builders": [
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": "$parameter.column_values.unique.unexpected_value.value <= 1.0 - $variables.success_ratio",
+                  "expectation_type": "expect_column_values_to_be_unique",
+                  "meta": {
+                    "profiler_details": "$parameter.column_values.unique.unexpected_value.details"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "class_name": "MeanUnexpectedMapMetricMultiBatchParameterBuilder",
+                      "evaluation_parameter_builder_configs": [
+                        {
+                          "class_name": "MetricMultiBatchParameterBuilder",
+                          "enforce_numeric_metric": true,
+                          "evaluation_parameter_builder_configs": null,
+                          "json_serialize": false,
+                          "metric_domain_kwargs": null,
+                          "metric_name": "table.row_count",
+                          "metric_value_kwargs": null,
+                          "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                          "name": "table_row_count",
+                          "reduce_scalar_metric": true,
+                          "replace_nan_with_zero": true
+                        },
+                        {
+                          "class_name": "MetricMultiBatchParameterBuilder",
+                          "enforce_numeric_metric": true,
+                          "evaluation_parameter_builder_configs": null,
+                          "json_serialize": false,
+                          "metric_domain_kwargs": "$domain.domain_kwargs",
+                          "metric_name": "column_values.nonnull.unexpected_count",
+                          "metric_value_kwargs": null,
+                          "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                          "name": "column_values_nonnull_unexpected_count",
+                          "reduce_scalar_metric": true,
+                          "replace_nan_with_zero": true
+                        }
+                      ],
+                      "json_serialize": true,
+                      "map_metric_name": "column_values.unique",
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.mean_unexpected_map_metric_multi_batch_parameter_builder",
+                      "name": "column_values.unique.unexpected_value",
+                      "null_count_parameter_builder_name": "column_values_nonnull_unexpected_count",
+                      "total_count_parameter_builder_name": "table_row_count"
+                    }
+                  ]
+                }
+              ],
+              "parameter_builders": [
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.unique.unexpected_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_unique_unexpected_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.nonnull.unexpected_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_nonnull_unexpected_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.null.unexpected_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_null_unexpected_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                }
+              ],
+              "variables": {
+                "success_ratio": 0.75
+              }
+            },
+            "datetime_columns_rule": {
+              "domain_builder": {
+                "class_name": "ColumnDomainBuilder",
+                "exclude_column_name_suffixes": null,
+                "exclude_column_names": [
+                  "N-NUMBER",
+                  "SERIAL NUMBER",
+                  "MFR MDL CODE",
+                  "ENG MFR MDL",
+                  "TYPE REGISTRANT",
+                  "NAME",
+                  "STREET",
+                  "STREET2",
+                  "CITY",
+                  "STATE",
+                  "ZIP CODE",
+                  "REGION",
+                  "COUNTY",
+                  "COUNTRY",
+                  "CERTIFICATION",
+                  "TYPE AIRCRAFT",
+                  "TYPE ENGINE",
+                  "STATUS CODE",
+                  "MODE S CODE",
+                  "FRACT OWNER",
+                  "AIR WORTH DATE",
+                  "OTHER NAMES(1)",
+                  "OTHER NAMES(2)",
+                  "OTHER NAMES(3)",
+                  "OTHER NAMES(4)",
+                  "OTHER NAMES(5)",
+                  "KIT MFR",
+                  "KIT MODEL",
+                  "MODE S CODE HEX",
+                  "X35"
+                ],
+                "exclude_semantic_types": [
+                  "text"
+                ],
+                "include_column_name_suffixes": null,
+                "include_column_names": null,
+                "include_semantic_types": [
+                  "datetime"
+                ],
+                "module_name": "great_expectations.rule_based_profiler.domain_builder.column_domain_builder",
+                "semantic_type_filter_class_name": null,
+                "semantic_type_filter_module_name": null
+              },
+              "expectation_configuration_builders": [
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_min_to_be_between",
+                  "max_value": "$parameter.column_min_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.column_min_range.details"
+                  },
+                  "min_value": "$parameter.column_min_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.min",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_min_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_max_to_be_between",
+                  "max_value": "$parameter.column_max_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.column_max_range.details"
+                  },
+                  "min_value": "$parameter.column_max_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.max",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_max_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_values_to_be_between",
+                  "max_value": "$parameter.column_max_range.value[1]",
+                  "meta": {
+                    "profiler_details": {
+                      "column_max_values_range_estimator": "$parameter.column_max_range.details",
+                      "column_min_values_range_estimator": "$parameter.column_min_range.details"
+                    }
+                  },
+                  "min_value": "$parameter.column_min_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "mostly": "$variables.mostly",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.min",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_min_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    },
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.max",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_max_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                }
+              ],
+              "parameter_builders": [
+                {
+                  "bucketize_data": true,
+                  "class_name": "PartitionParameterBuilder",
+                  "evaluation_parameter_builder_configs": [
+                    {
+                      "class_name": "MetricSingleBatchParameterBuilder",
+                      "enforce_numeric_metric": false,
+                      "evaluation_parameter_builder_configs": null,
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.partition",
+                      "metric_value_kwargs": {
+                        "allow_relative_error": false,
+                        "bins": "auto"
+                      },
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder",
+                      "name": "column_partition_metric_single_batch_parameter_builder",
+                      "reduce_scalar_metric": false,
+                      "replace_nan_with_zero": false
+                    },
+                    {
+                      "class_name": "MetricSingleBatchParameterBuilder",
+                      "enforce_numeric_metric": false,
+                      "evaluation_parameter_builder_configs": null,
+                      "json_serialize": false,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.value_counts",
+                      "metric_value_kwargs": {
+                        "sort": "value"
+                      },
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder",
+                      "name": "column_value_counts_metric_single_batch_parameter_builder",
+                      "reduce_scalar_metric": false,
+                      "replace_nan_with_zero": false
+                    },
+                    {
+                      "class_name": "MetricSingleBatchParameterBuilder",
+                      "enforce_numeric_metric": false,
+                      "evaluation_parameter_builder_configs": null,
+                      "json_serialize": false,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column_values.nonnull.count",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder",
+                      "name": "column_values_nonnull_count_metric_single_batch_parameter_builder",
+                      "reduce_scalar_metric": false,
+                      "replace_nan_with_zero": false
+                    }
+                  ],
+                  "json_serialize": true,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.partition_parameter_builder",
+                  "name": "column_values_partition"
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.quantile_values",
+                  "metric_value_kwargs": {
+                    "allow_relative_error": "$variables.allow_relative_error",
+                    "quantiles": "$variables.quantiles"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_quantile_values",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.min",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_min",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.max",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_max",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.median",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_median",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.mean",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_mean",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.standard_deviation",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_standard_deviation",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                }
+              ],
+              "variables": {
+                "allow_relative_error": "linear",
+                "estimator": "bootstrap",
+                "false_positive_rate": 0.05,
+                "include_estimator_samples_histogram_in_details": false,
+                "mostly": 1.0,
+                "n_resamples": 9999,
+                "quantile_statistic_interpolation_method": "auto",
+                "random_seed": null,
+                "round_decimals": 1,
+                "strict_max": false,
+                "strict_min": false,
+                "truncate_values": {
+                  "lower_bound": null,
+                  "upper_bound": null
+                }
+              }
+            },
+            "numeric_columns_rule": {
+              "domain_builder": {
+                "class_name": "ColumnDomainBuilder",
+                "exclude_column_name_suffixes": [
+                  "_id"
+                ],
+                "exclude_column_names": [
+                  "N-NUMBER",
+                  "SERIAL NUMBER",
+                  "MFR MDL CODE",
+                  "ENG MFR MDL",
+                  "TYPE REGISTRANT",
+                  "NAME",
+                  "STREET",
+                  "STREET2",
+                  "CITY",
+                  "STATE",
+                  "ZIP CODE",
+                  "REGION",
+                  "COUNTY",
+                  "COUNTRY",
+                  "CERTIFICATION",
+                  "TYPE AIRCRAFT",
+                  "TYPE ENGINE",
+                  "STATUS CODE",
+                  "MODE S CODE",
+                  "FRACT OWNER",
+                  "AIR WORTH DATE",
+                  "OTHER NAMES(1)",
+                  "OTHER NAMES(2)",
+                  "OTHER NAMES(3)",
+                  "OTHER NAMES(4)",
+                  "OTHER NAMES(5)",
+                  "KIT MFR",
+                  "KIT MODEL",
+                  "MODE S CODE HEX",
+                  "X35"
+                ],
+                "exclude_semantic_types": [
+                  "identifier"
+                ],
+                "include_column_name_suffixes": null,
+                "include_column_names": null,
+                "include_semantic_types": [
+                  "numeric"
+                ],
+                "module_name": "great_expectations.rule_based_profiler.domain_builder.column_domain_builder",
+                "semantic_type_filter_class_name": null,
+                "semantic_type_filter_module_name": null
+              },
+              "expectation_configuration_builders": [
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_min_to_be_between",
+                  "max_value": "$parameter.column_min_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.column_min_range.details"
+                  },
+                  "min_value": "$parameter.column_min_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.min",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_min_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_max_to_be_between",
+                  "max_value": "$parameter.column_max_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.column_max_range.details"
+                  },
+                  "min_value": "$parameter.column_max_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.max",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_max_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_values_to_be_between",
+                  "max_value": "$parameter.column_max_range.value[1]",
+                  "meta": {
+                    "profiler_details": {
+                      "column_max_values_range_estimator": "$parameter.column_max_range.details",
+                      "column_min_values_range_estimator": "$parameter.column_min_range.details"
+                    }
+                  },
+                  "min_value": "$parameter.column_min_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "mostly": "$variables.mostly",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.min",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_min_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    },
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.max",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_max_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "allow_relative_error": "$variables.allow_relative_error",
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_quantile_values_to_be_between",
+                  "meta": {
+                    "profiler_details": "$parameter.column_max_range.details"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "quantile_ranges": {
+                    "quantiles": "$variables.quantiles",
+                    "value_ranges": "$parameter.column_quantile_values_range.value"
+                  },
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.quantile_values",
+                      "metric_value_kwargs": {
+                        "allow_relative_error": "$variables.allow_relative_error",
+                        "quantiles": "$variables.quantiles"
+                      },
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_quantile_values_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_median_to_be_between",
+                  "max_value": "$parameter.column_median_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.column_median_range.details"
+                  },
+                  "min_value": "$parameter.column_median_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.median",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_median_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_mean_to_be_between",
+                  "max_value": "$parameter.column_mean_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.column_mean_range.details"
+                  },
+                  "min_value": "$parameter.column_mean_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.mean",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_mean_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_stdev_to_be_between",
+                  "max_value": "$parameter.column_standard_deviation_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.column_standard_deviation_range.details"
+                  },
+                  "min_value": "$parameter.column_standard_deviation_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.standard_deviation",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_standard_deviation_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                }
+              ],
+              "parameter_builders": [
+                {
+                  "bucketize_data": true,
+                  "class_name": "PartitionParameterBuilder",
+                  "evaluation_parameter_builder_configs": [
+                    {
+                      "class_name": "MetricSingleBatchParameterBuilder",
+                      "enforce_numeric_metric": false,
+                      "evaluation_parameter_builder_configs": null,
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.partition",
+                      "metric_value_kwargs": {
+                        "allow_relative_error": false,
+                        "bins": "auto"
+                      },
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder",
+                      "name": "column_partition_metric_single_batch_parameter_builder",
+                      "reduce_scalar_metric": false,
+                      "replace_nan_with_zero": false
+                    },
+                    {
+                      "class_name": "MetricSingleBatchParameterBuilder",
+                      "enforce_numeric_metric": false,
+                      "evaluation_parameter_builder_configs": null,
+                      "json_serialize": false,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column.value_counts",
+                      "metric_value_kwargs": {
+                        "sort": "value"
+                      },
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder",
+                      "name": "column_value_counts_metric_single_batch_parameter_builder",
+                      "reduce_scalar_metric": false,
+                      "replace_nan_with_zero": false
+                    },
+                    {
+                      "class_name": "MetricSingleBatchParameterBuilder",
+                      "enforce_numeric_metric": false,
+                      "evaluation_parameter_builder_configs": null,
+                      "json_serialize": false,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column_values.nonnull.count",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder",
+                      "name": "column_values_nonnull_count_metric_single_batch_parameter_builder",
+                      "reduce_scalar_metric": false,
+                      "replace_nan_with_zero": false
+                    }
+                  ],
+                  "json_serialize": true,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.partition_parameter_builder",
+                  "name": "column_values_partition"
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.quantile_values",
+                  "metric_value_kwargs": {
+                    "allow_relative_error": "$variables.allow_relative_error",
+                    "quantiles": "$variables.quantiles"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_quantile_values",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.min",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_min",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.max",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_max",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.median",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_median",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.mean",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_mean",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column.standard_deviation",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_standard_deviation",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                }
+              ],
+              "variables": {
+                "allow_relative_error": "linear",
+                "estimator": "bootstrap",
+                "false_positive_rate": 0.05,
+                "include_estimator_samples_histogram_in_details": false,
+                "mostly": 1.0,
+                "n_resamples": 9999,
+                "quantile_statistic_interpolation_method": "auto",
+                "quantiles": [
+                  0.25,
+                  0.5,
+                  0.75
+                ],
+                "random_seed": null,
+                "round_decimals": 1,
+                "strict_max": false,
+                "strict_min": false,
+                "truncate_values": {
+                  "lower_bound": null,
+                  "upper_bound": null
+                }
+              }
+            },
+            "table_rule": {
+              "domain_builder": {
+                "class_name": "TableDomainBuilder",
+                "module_name": "great_expectations.rule_based_profiler.domain_builder.table_domain_builder"
+              },
+              "expectation_configuration_builders": [
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "condition": null,
+                  "expectation_type": "expect_table_row_count_to_be_between",
+                  "max_value": "$parameter.table_row_count_range.value[1]",
+                  "meta": {
+                    "profiler_details": "$parameter.table_row_count_range.details"
+                  },
+                  "min_value": "$parameter.table_row_count_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "table.row_count",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "table_row_count_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column_set": "$parameter.column_names_set_estimator.value",
+                  "condition": "$parameter.column_names_set_estimator.details.success_ratio >= $variables.success_ratio",
+                  "exact_match": "$variables.exact_match",
+                  "expectation_type": "expect_table_columns_to_match_set",
+                  "meta": {
+                    "profiler_details": "$parameter.column_names_set_estimator.details"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "class_name": "MeanTableColumnsSetMatchMultiBatchParameterBuilder",
+                      "evaluation_parameter_builder_configs": null,
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.mean_table_columns_set_match_multi_batch_parameter_builder",
+                      "name": "column_names_set_estimator"
+                    }
+                  ]
+                }
+              ],
+              "parameter_builders": [
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": null,
+                  "metric_name": "table.row_count",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "table_row_count",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": false,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "table.columns",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "table_columns",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": false
+                }
+              ],
+              "variables": {
+                "estimator": "bootstrap",
+                "exact_match": null,
+                "false_positive_rate": 0.05,
+                "include_estimator_samples_histogram_in_details": false,
+                "n_resamples": 9999,
+                "quantile_statistic_interpolation_method": "auto",
+                "random_seed": null,
+                "round_decimals": 0,
+                "success_ratio": 1.0,
+                "truncate_values": {
+                  "lower_bound": 0,
+                  "upper_bound": null
+                }
+              }
+            },
+            "text_columns_rule": {
+              "domain_builder": {
+                "class_name": "ColumnDomainBuilder",
+                "exclude_column_name_suffixes": null,
+                "exclude_column_names": [
+                  "N-NUMBER",
+                  "SERIAL NUMBER",
+                  "MFR MDL CODE",
+                  "ENG MFR MDL",
+                  "TYPE REGISTRANT",
+                  "NAME",
+                  "STREET",
+                  "STREET2",
+                  "CITY",
+                  "STATE",
+                  "ZIP CODE",
+                  "REGION",
+                  "COUNTY",
+                  "COUNTRY",
+                  "CERTIFICATION",
+                  "TYPE AIRCRAFT",
+                  "TYPE ENGINE",
+                  "STATUS CODE",
+                  "MODE S CODE",
+                  "FRACT OWNER",
+                  "AIR WORTH DATE",
+                  "OTHER NAMES(1)",
+                  "OTHER NAMES(2)",
+                  "OTHER NAMES(3)",
+                  "OTHER NAMES(4)",
+                  "OTHER NAMES(5)",
+                  "KIT MFR",
+                  "KIT MODEL",
+                  "MODE S CODE HEX",
+                  "X35"
+                ],
+                "exclude_semantic_types": [
+                  "numeric",
+                  "datetime"
+                ],
+                "include_column_name_suffixes": null,
+                "include_column_names": null,
+                "include_semantic_types": [
+                  "text"
+                ],
+                "module_name": "great_expectations.rule_based_profiler.domain_builder.column_domain_builder",
+                "semantic_type_filter_class_name": null,
+                "semantic_type_filter_module_name": null
+              },
+              "expectation_configuration_builders": [
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": null,
+                  "expectation_type": "expect_column_value_lengths_to_be_between",
+                  "max_value": "$parameter.column_values_length_max_range.value[1]",
+                  "meta": {
+                    "profiler_details": {
+                      "column_max_length_range_estimator": "$parameter.column_values_length_max_range.details",
+                      "column_min_length_range_estimator": "$parameter.column_values_length_min_range.details"
+                    }
+                  },
+                  "min_value": "$parameter.column_values_length_min_range.value[0]",
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "mostly": "$variables.mostly",
+                  "strict_max": "$variables.strict_max",
+                  "strict_min": "$variables.strict_min",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column_values.length.min",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_values_length_min_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    },
+                    {
+                      "bw_method": null,
+                      "class_name": "NumericMetricRangeMultiBatchParameterBuilder",
+                      "enforce_numeric_metric": true,
+                      "estimator": "$variables.estimator",
+                      "evaluation_parameter_builder_configs": null,
+                      "false_positive_rate": "$variables.false_positive_rate",
+                      "include_estimator_samples_histogram_in_details": "$variables.include_estimator_samples_histogram_in_details",
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_name": "column_values.length.max",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.numeric_metric_range_multi_batch_parameter_builder",
+                      "n_resamples": "$variables.n_resamples",
+                      "name": "column_values_length_max_range",
+                      "quantile_statistic_interpolation_method": "$variables.quantile_statistic_interpolation_method",
+                      "random_seed": "$variables.random_seed",
+                      "reduce_scalar_metric": true,
+                      "replace_nan_with_zero": true,
+                      "round_decimals": "$variables.round_decimals",
+                      "truncate_values": "$variables.truncate_values"
+                    }
+                  ]
+                },
+                {
+                  "class_name": "DefaultExpectationConfigurationBuilder",
+                  "column": "$domain.domain_kwargs.column",
+                  "condition": "$parameter.column_values_match_regex.details.success_ratio >= $variables.success_ratio",
+                  "expectation_type": "expect_column_values_to_match_regex",
+                  "meta": {
+                    "profiler_details": "$parameter.column_values_match_regex.details"
+                  },
+                  "module_name": "great_expectations.rule_based_profiler.expectation_configuration_builder.default_expectation_configuration_builder",
+                  "mostly": "$variables.mostly",
+                  "regex": "$parameter.column_values_match_regex.value",
+                  "validation_parameter_builder_configs": [
+                    {
+                      "candidate_regexes": null,
+                      "class_name": "RegexPatternStringParameterBuilder",
+                      "evaluation_parameter_builder_configs": null,
+                      "json_serialize": true,
+                      "metric_domain_kwargs": "$domain.domain_kwargs",
+                      "metric_value_kwargs": null,
+                      "module_name": "great_expectations.rule_based_profiler.parameter_builder.regex_pattern_string_parameter_builder",
+                      "name": "column_values_match_regex",
+                      "threshold": 1.0
+                    }
+                  ]
+                }
+              ],
+              "parameter_builders": [
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.length.min",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_length_min",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                },
+                {
+                  "class_name": "MetricMultiBatchParameterBuilder",
+                  "enforce_numeric_metric": true,
+                  "evaluation_parameter_builder_configs": null,
+                  "json_serialize": true,
+                  "metric_domain_kwargs": "$domain.domain_kwargs",
+                  "metric_name": "column_values.length.max",
+                  "metric_value_kwargs": null,
+                  "module_name": "great_expectations.rule_based_profiler.parameter_builder.metric_multi_batch_parameter_builder",
+                  "name": "column_values_length_max",
+                  "reduce_scalar_metric": true,
+                  "replace_nan_with_zero": true
+                }
+              ],
+              "variables": {
+                "estimator": "bootstrap",
+                "false_positive_rate": 0.05,
+                "include_estimator_samples_histogram_in_details": false,
+                "mostly": 1.0,
+                "n_resamples": 9999,
+                "quantile_statistic_interpolation_method": "auto",
+                "random_seed": null,
+                "round_decimals": 0,
+                "strict_max": false,
+                "strict_min": false,
+                "success_ratio": 0.75,
+                "truncate_values": {
+                  "lower_bound": 0,
+                  "upper_bound": null
+                }
+              }
+            }
+          },
+          "variables": {}
+        }
+      }
+    ],
+    "great_expectations_version": "0.15.9"
+  }
+}

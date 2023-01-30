@@ -134,3 +134,12 @@ streamlit/venv_streamlit
 aws/venv_aws
 sqlite/venv_sqlite
 sqlite/example.db
+great-expectation/venv_ge
+
+great-expectation/great_expectations/checkpoints
+great-expectation/great_expectations/data
+great-expectation/great_expectations/plugins
+
+great-expectation/great_expectations/expectations/.ge_store_backend_id
+great-expectation/great_expectations/uncommitted/config_variables.yml
+great-expectation/great_expectations/uncommitted/validations
