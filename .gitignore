@@ -145,6 +145,7 @@ great-expectation/great_expectations/uncommitted/config_variables.yml
 great-expectation/great_expectations/uncommitted/validations
 
 !pytest/test_run_2023-02-01_17:59:40.log
+DAMG7245-Spring23.code-workspace
 
 # Local .terraform directories
 **/.terraform/*

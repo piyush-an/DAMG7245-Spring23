@@ -1,0 +1,32 @@
+name: CI-UnitTesting
+
+on:  
+  push:
+  # pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.10
+      - name: Run tests
+        working-directory: ./pytest
+        run: |
+          pip install -r requirments.txt
+          pytest -v test.py
+
+      # For pipenv package manager
+      # - name: Install pipenv
+      #   run: pip install pipenv
+      # - name: Run tests
+      #   working-directory: ./ci-test
+      #   run: |
+      #     pipenv install --dev
+      #     pipenv run pytest -v
