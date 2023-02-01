@@ -31,4 +31,4 @@ Additional:
 
 Implement Unit testing with Git Actions as CI
 
-* Git Actions file defined [pytest.yml](./.github/workflows/pytest.yml)
+* Git Actions file defined [pytest.yml](/.github/workflows/pytest.yml)
