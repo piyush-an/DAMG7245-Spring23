@@ -6,7 +6,7 @@ def dec(x):
     return x - 1
 
 def join_str(a:str, b:str):
-    return a+'//'+b
+    return a+'/'+b
 
 
 print(f"Calling the inc function: {inc(2)}")
