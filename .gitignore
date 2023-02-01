@@ -144,6 +144,7 @@ great-expectation/great_expectations/expectations/.ge_store_backend_id
 great-expectation/great_expectations/uncommitted/config_variables.yml
 great-expectation/great_expectations/uncommitted/validations
 
+!pytest/test_run_2023-02-01_17:59:40.log
 
 # Local .terraform directories
 **/.terraform/*
@@ -179,3 +180,4 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
