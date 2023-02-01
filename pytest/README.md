@@ -24,4 +24,11 @@ The [pytest](https://docs.pytest.org/en/7.2.x/contents.html) framework makes it 
     pytest -v test.py > test_run_$(date "+%Y-%m-%d_%H:%M:%S").log
     ```
 
-Sample test result [pytest/test_run_2023-02-01_17:59:40.log](test_run_2023-02-01_17:59:40.log)
+    Sample test result [pytest/test_run_2023-02-01_17:59:40.log](test_run_2023-02-01_17:59:40.log)
+
+
+Additional:
+
+Implement Unit testing with Git Actions as CI
+
+* Git Actions file defined [pytest.yml](.github/workflows/pytest.yml)
