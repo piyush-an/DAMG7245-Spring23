@@ -4,6 +4,10 @@ from main import app
 
 client = TestClient(app)
 
+
+def test_sample():
+    assert 1 ==1
+
 def test_say_hello():
     response = client.get("/say_hello")
     assert response.status_code == 200
