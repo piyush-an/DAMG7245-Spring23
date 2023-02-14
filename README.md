@@ -1,5 +1,6 @@
 [![DQ Reports](https://github.com/piyush-an/DAMG7245-Spring23/actions/workflows/static.yml/badge.svg)](https://github.com/piyush-an/DAMG7245-Spring23/actions/workflows/static.yml)
 [![CI-UnitTesting](https://github.com/piyush-an/DAMG7245-Spring23/actions/workflows/pytest.yml/badge.svg)](https://github.com/piyush-an/DAMG7245-Spring23/actions/workflows/pytest.yml)
+[![fastapi-ci](https://github.com/piyush-an/DAMG7245-Spring23/actions/workflows/fastapi.yml/badge.svg)](https://github.com/piyush-an/DAMG7245-Spring23/actions/workflows/fastapi.yml)
 
 ## DAMG7245-Spring23
 This is a repo for reference to hands on labs.
