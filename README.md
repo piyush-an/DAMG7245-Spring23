@@ -11,4 +11,5 @@ This is a repo for reference to hands on labs.
 3. [SQLite](sqlite) - SQLite Database
 4. [Great Expectations](great-expectation) - Data Quality Report
 5. [Pytest](pytest) - Unit Testing
+6. [FastAPI ](fastapi) - FastAPI, Dockerizing and Cloud Deployment
 
