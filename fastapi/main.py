@@ -18,5 +18,5 @@ async def say_hello() -> dict:
 async def fetch_url(userinput: UserInput) -> dict:
     # if userinput.date > 31:
     #     return 400 bad request . incorrect date
-    aws_nexrad_url = f"https://noaa-nexrad-level2.s3.amazonaws.com/index.html#{userinput.year:04}/{userinput.month:02}/{userinput.date:02}/{userinput.station}/bug"
+    aws_nexrad_url = f"https://noaa-nexrad-level2.s3.amazonaws.com/index.html#{userinput.year:04}/{userinput.month:02}/{userinput.date:02}/{userinput.station}/bug2"
     return {'url': aws_nexrad_url }
