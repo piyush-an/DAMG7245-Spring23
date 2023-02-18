@@ -42,6 +42,8 @@ resource "google_compute_instance" "vm" {
   boot_disk {
     initialize_params {
       image = data.google_compute_image.ubuntu.self_link
+      size  = 50
+      type  = "pd-balanced"
     }
   }
 
@@ -54,7 +56,6 @@ resource "google_compute_instance" "vm" {
 
   metadata_startup_script = data.template_file.install.rendered
 }
-
 
 resource "google_compute_firewall" "default" {
   name    = "web-firewall"

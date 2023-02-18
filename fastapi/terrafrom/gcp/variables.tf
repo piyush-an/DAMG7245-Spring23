@@ -25,7 +25,7 @@ variable "name" {
 variable "machine_type" {
   description = "GCP VM instance machine type."
   type        = string
-  default     = "e2-medium" # e2-standard-2 e2-standard-4
+  default     = "e2-standard-4" # e2-medium e2-standard-2 e2-standard-4
 }
 
 variable "gce_ssh_user" {
