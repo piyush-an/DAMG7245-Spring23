@@ -182,3 +182,5 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+fastapi/terrafrom/gcp/ce
+fastapi/terrafrom/gcp/ce.pub
