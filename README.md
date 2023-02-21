@@ -15,3 +15,5 @@ This is a repo for reference to hands on labs.
 5. [Pytest](pytest) - Unit Testing
 6. [FastAPI](fastapi) - FastAPI, Dockerizing and Cloud Deployment
 7. [Airflow](airflow) - Apache Airflow
+8. [Dockerizing Streamlit](docker-streamlit) - Dockerizing Streamlit Application
+9. [Architecture Diagram](arch-diag) - Architecture Diagram as Code

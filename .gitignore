@@ -185,3 +185,5 @@ terraform.rc
 fastapi/terrafrom/gcp/ce
 fastapi/terrafrom/gcp/ce.pub
 .DS_STORE
+ce.pub
+ce

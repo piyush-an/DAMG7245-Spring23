@@ -11,5 +11,5 @@ Connect via ssh
 
 ```
 ssh -i ce piyush_dezc_2023@35.196.116.33
-ssh -i ce ubuntu@34.148.10.17
+ssh -i ce ubuntu@35.243.242.146
 ```
