@@ -187,3 +187,7 @@ fastapi/terrafrom/gcp/ce.pub
 .DS_STORE
 ce.pub
 ce
+data_as_service/.env_ge
+data_as_service/airflow/logs
+data_as_service/airflow/working_dir/data
+!data_as_service/.env
