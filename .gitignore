@@ -191,3 +191,4 @@ data_as_service/.env_ge
 data_as_service/airflow/logs
 data_as_service/airflow/working_dir/data
 !data_as_service/.env
+!async_openai/sample_resp.log

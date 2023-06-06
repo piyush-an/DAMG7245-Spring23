@@ -58,5 +58,10 @@ with dag:
     dag=dag,
     )
 
+    list_working_dir = BashOperator(
+        task_id="list_working_dir",
+        bash_command='echo "Listing files " ; ls -l /opt/airflow/working_dir',
+    )
+
 
     clean_dir >> output_file
